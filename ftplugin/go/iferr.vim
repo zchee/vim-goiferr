@@ -3,7 +3,7 @@
 "
 " This filetype plugin add a new commands for go buffers:
 "
-"   :GoIfferr
+"   :GoIferr
 "
 "       automatically inserts idiomatic error handling
 "       to given Go source code.
