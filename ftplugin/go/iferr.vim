@@ -23,8 +23,7 @@ if !exists("g:go_iferr_command")
 endif
 
 function! s:GoIferr()
-    let view = winsaveview()
-    silent execute "%!" . g:go_iferr_command . " -w " . expand("%:p") . "> /dev/null"
+    silent execute "%!" . g:go_iferr_command . " -w " . expand("%:p")
     silent e! %
 endfunction
 
