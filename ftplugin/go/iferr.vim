@@ -91,6 +91,9 @@ function! s:GoIferr()
   " Restore the fileformat
   let &fileformat = old_fileformat
 
+  " Delete temp file
+  call delete(l:tmpname)
+
   " Restore cursor position and other...
   call winrestview(l:curw)
 endfunction
