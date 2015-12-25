@@ -88,8 +88,9 @@ function! s:GoIferr()
   call rename(l:tmpname, expand('%'))
   silent edit!
 
-  " Restore the fileformat
+  " Restore the fileformat and syntax
   let &fileformat = old_fileformat
+  let &syntax = &syntax
 
   " Delete temp file
   call delete(l:tmpname)
