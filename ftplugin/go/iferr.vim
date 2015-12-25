@@ -75,7 +75,7 @@ function! s:GoIferr()
 
   " Write current unsaved buffer to a temp file(filename is '_' + current file name)
   " goiferr must exists in file is the $GOPATH
-  let l:tmpname = expand('%:p:h') . "_" . expand('%')
+  let l:tmpname = expand('%:p:h') . "_" . expand('%:t')
   call writefile(getline(1, '$'), l:tmpname)
 
   " Execute goiferr use vimproc or vim system
